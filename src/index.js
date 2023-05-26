@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import WelcomePage from './pages/Welcome';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import MessagePage from './pages/MessagePage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <Routes>
+      <Route path = "/" element = {<WelcomePage/>} />
+      <Route path = "/messagePage" element = {<MessagePage/>} />
+    </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
