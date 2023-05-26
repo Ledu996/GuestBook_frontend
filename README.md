@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+First run nmp install to add all required packages to your application
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
